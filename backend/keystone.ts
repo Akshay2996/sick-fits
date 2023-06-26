@@ -1,5 +1,7 @@
+// TODO: To use "nodemon" package so that it hot reloads
 import { config, createSchema } from "@keystone-next/keystone/schema";
 import "dotenv/config";
+import { User } from "./schemas/User";
 
 const databaseURL =
   process.env.DATABASE_URL || "mongodb://localhost/keystone-sick-fits";
@@ -23,6 +25,7 @@ export default config({
   },
   lists: createSchema({
     // Schema items  goes here
+    User,
   }),
   ui: {
     // TODO: change this for roles
