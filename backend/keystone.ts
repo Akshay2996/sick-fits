@@ -1,12 +1,13 @@
 // TODO: To use "nodemon" package so that it hot reloads
 import { config, createSchema } from "@keystone-next/keystone/schema";
-import "dotenv/config";
-import { User } from "./schemas/User";
-import { createAuth } from "@keystone-next/auth";
 import {
   withItemData,
   statelessSessions,
 } from "@keystone-next/keystone/session";
+import { createAuth } from "@keystone-next/auth";
+import "dotenv/config";
+import { User } from "./schemas/User";
+import { Product } from "./schemas/Product";
 
 const databaseURL =
   process.env.DATABASE_URL || "mongodb://localhost/keystone-sick-fits";
@@ -43,8 +44,9 @@ export default withAuth(
       // TODO: Add data seeding here
     },
     lists: createSchema({
-      // Schema items  goes here
+      // Schema items goes here
       User,
+      Product,
     }),
     ui: {
       // To show the UI only for people who pass this check
