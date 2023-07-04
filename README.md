@@ -16,5 +16,6 @@ An E-Commerce site
 - Creating schemas (Structure of data) in keystone
 - Authentication in keystone
 - Creating User, Product & ProductImage Datatype
+- Created 2 way data relationship between Product & ProductImage Datatype in keystone
 
 **NOTE:** *Readme is still in Work in Progress state and will be updated from time to time*
