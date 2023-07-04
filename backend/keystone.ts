@@ -8,6 +8,7 @@ import { createAuth } from "@keystone-next/auth";
 import "dotenv/config";
 import { User } from "./schemas/User";
 import { Product } from "./schemas/Product";
+import { ProductImage } from "./schemas/ProductImage";
 
 const databaseURL =
   process.env.DATABASE_URL || "mongodb://localhost/keystone-sick-fits";
@@ -47,6 +48,7 @@ export default withAuth(
       // Schema items goes here
       User,
       Product,
+      ProductImage,
     }),
     ui: {
       // To show the UI only for people who pass this check
