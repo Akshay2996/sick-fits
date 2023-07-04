@@ -7,7 +7,7 @@ An E-Commerce site
 ⚠️ WIP ⚠️
 
 ---
-### Working/Worked on
+### 🚨 Working/Worked on
 
 - Used `NProgress` library for progress bar when switching pages.
 - Using `serverstylesheet styled-component` so that our page doesn't remove styling (flicker) on reload.
@@ -15,5 +15,7 @@ An E-Commerce site
 - Setup keystoneJS (Headless CMS)
 - Creating schemas (Structure of data) in keystone
 - Authentication in keystone
+- Creating User, Product & ProductImage Datatype
+- Created 2 way data relationship between Product & ProductImage Datatype in keystone
 
 **NOTE:** *Readme is still in Work in Progress state and will be updated from time to time*
